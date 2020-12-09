@@ -1,7 +1,7 @@
 ﻿using Batcaverna.Modelos;
 using Batcaverna.Repositorios;
 using src.MenuBatCarro;
-using src.MenuBatTraje;
+//using src.MenuBatTraje;
 using System;
 
 namespace Batcaverna
@@ -11,7 +11,7 @@ namespace Batcaverna
         static void Main(string[] args)
         {
             var opcaoSelecionada = "";
-            var menuBatTraje = new MenuBatTraje();
+            //var menuBatTraje = new MenuBatTraje();
             var menuBatCarro = new MenuBatCarro();
 
             Console.WriteLine("Bem-vindo à Batcaverna!");
@@ -23,26 +23,26 @@ namespace Batcaverna
                 var opcaoSelecionadaBatTraje = "";
                 var opcaoSelecionadaBatCarro = "";
 
-                if (opcaoSelecionada == "1")
-                {
-                    while (opcaoSelecionadaBatTraje != "x")
-                    {
-                        opcaoSelecionadaBatTraje = ObterOpçãoDoMenuBatTrajeComUsuário();
+                //if (opcaoSelecionada == "1")
+                //{
+                //    while (opcaoSelecionadaBatTraje != "x")
+                //    {
+                //        opcaoSelecionadaBatTraje = ObterOpçãoDoMenuBatTrajeComUsuário();
 
-                        if (opcaoSelecionadaBatTraje == "1") 
-                            menuBatTraje.Cadastrar();
+                //        if (opcaoSelecionadaBatTraje == "1") 
+                //            menuBatTraje.Cadastrar();
 
-                        if(opcaoSelecionadaBatTraje == "2") 
-                            menuBatTraje.Quantidade();
+                //        if(opcaoSelecionadaBatTraje == "2") 
+                //            menuBatTraje.Quantidade();
 
-                        if(opcaoSelecionadaBatTraje == "3")
-                            menuBatTraje.Verificar();
+                //        if(opcaoSelecionadaBatTraje == "3")
+                //            menuBatTraje.Verificar();
 
-                        if(opcaoSelecionadaBatTraje == "4") 
-                            menuBatTraje.Excluir();
+                //        if(opcaoSelecionadaBatTraje == "4") 
+                //            menuBatTraje.Excluir();
                         
-                    }
-                }
+                //    }
+                //}
 
                 if ( opcaoSelecionada == "2")
                 {

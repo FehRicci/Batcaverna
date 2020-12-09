@@ -1,8 +1,8 @@
-using Batcaverna.Modelos.Acessorios;
+using Batcaverna.Interfaces;
 
 namespace Batcaverna.Modelos
 {
-    public class BatCarro
+    public class BatCarro : IEntidadeCadastravel
     {
         public long Id { get; set; }
         public bool ResistenteÀCorte { get; set; }
